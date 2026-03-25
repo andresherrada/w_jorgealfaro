@@ -137,20 +137,21 @@
                     </a>
 </div>
 </div>
+<div class="md:col-span-5 relative">
 <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-primary">
-<!-- Imagen o video pendiente a reemplazar -->
-<div class="w-full h-full aspect-[4/5] flex items-center justify-center text-primary-fixed italic p-6 text-center">
-    [Aquí irá la imagen que pegaste. Por favor cópiala a la carpeta del proyecto para usarla, o indícame si genero una similar.]
-</div>
+<style>
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.08); }
+}
+</style>
+<img class="w-full h-full object-cover aspect-[4/5] object-center" style="animation: slowZoom 25s alternate infinite ease-in-out;" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate professional teamwork">
 <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6">
 <p class="text-white font-headline font-bold text-lg">Jorge Luis Alfaro</p>
 <p class="text-tertiary-fixed-dim text-sm">Estratega de Impacto &amp; GC Index Specialist</p>
 </div>
 </div>
-<!-- Floating GC Graphic Element -->
-<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl hidden lg:flex items-center justify-center p-4">
-<img alt="GC Index Proclivities Visualization" class="w-full h-full object-contain" data-alt="Stylized geometric graphic representing the five GC Index proclivities with icons for playmaker, strategist, polisher, implementer and game changer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLI0bTDh9QbM3kg822IKQeLsS_zmKNnX7eNClhPJow_s61LRQHWCNQlOJ1lkki79_CWZ54NoRGVIM_4P6RdODp5oub9_xDbapzNrk_vOMQV3MKaURgSkr35vkFPwA0GRlk0LVzZOaPu4n3CXzI6KccJ9Gu7XOYN3TCfPf2WGi3-DGqViSILy2uLBGq6qD-iZtMCSJGb7ChiNaulqyRwFkPEISv7gEJmhJKKjWzSwOjR9BxtwjpZK0WpW3DBYJhmPpiOK1tuud1aWQm"/>
 </div>
 </div>
 </div>
@@ -397,7 +398,8 @@
 </div>
 <div class="flex flex-col items-center md:items-end gap-4">
 <div class="flex justify-center mt-4">
-<a class="flex items-center group transition-all hover:opacity-100 opacity-80" href="https://www.villacoding.com" target="_blank" title="Villa Coding">
+<a class="flex items-center gap-3 group transition-all hover:opacity-100 opacity-80" href="https://www.villacoding.com" target="_blank" title="Villa Coding">
+<span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Desarrollado por</span>
 <img alt="Villa Coding Logo" class="h-10 w-auto" src="villacoding_transparente.png"/>
 </a>
 </div>
